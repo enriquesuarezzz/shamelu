@@ -1,5 +1,5 @@
 'use client'
-import { PoppinsText } from '@/components/atoms/poppins_text'
+import { InterText } from '@/components/atoms/poppins_text'
 import { Link } from '@/i18n/routing'
 import LocaleSwitcher from '../locale_switcher/locale_switcher'
 import Cart from '@/components/atoms/svg/cart'
@@ -47,49 +47,49 @@ export default function NavBar({ translations }: NavBarProps) {
   const formattedTotalPrice = totalPrice.toFixed(2)
 
   return (
-    <div className="fixed left-0 top-0 z-50 flex w-full flex-row items-center justify-between border-b border-neutral-200 px-6 py-4 text-white md:px-20">
+    <div className="fixed left-0 top-0 z-50 flex w-full flex-row items-center justify-between border-b border-neutral-200 px-6 py-8 text-white md:px-20">
       <div className="flex w-full items-center justify-between">
         {/* Left Section: Logo + Nav Links */}
-        <div className="flex items-center gap-10">
+        <div className="flex items-center gap-16">
           <Link href="/" className="flex items-center gap-2">
             <Image src="/images/logo.avif" alt="Logo" width={100} height={60} />
           </Link>
-          <div className="hidden items-center gap-10 md:flex">
+          <div className="hidden items-center gap-16 md:flex">
             <Link href="/">
-              <PoppinsText
+              <InterText
                 tag="h1"
                 fontSize="16px"
-                className="relative mx-auto block w-fit text-black after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-[#ccb32b] after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
+                className="text-black transition-colors duration-300 hover:text-[#1bdddd]"
               >
                 {translations.home}
-              </PoppinsText>
+              </InterText>
             </Link>
             <Link href="/collections">
-              <PoppinsText
+              <InterText
                 tag="h1"
                 fontSize="16px"
-                className="relative mx-auto block w-fit text-black after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-[#ccb32b] after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
+                className="text-black transition-colors duration-300 hover:text-[#1bdddd]"
               >
                 {translations.collections}
-              </PoppinsText>
+              </InterText>
             </Link>
             <Link href="/shop">
-              <PoppinsText
+              <InterText
                 tag="h1"
                 fontSize="16px"
-                className="relative mx-auto block w-fit text-black after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-[#ccb32b] after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
+                className="text-black transition-colors duration-300 hover:text-[#1bdddd]"
               >
                 {translations.shop}
-              </PoppinsText>
+              </InterText>
             </Link>
             <Link href="/about_us">
-              <PoppinsText
+              <InterText
                 tag="h1"
                 fontSize="16px"
-                className="relative mx-auto block w-fit text-black after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-[#ccb32b] after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
+                className="text-black transition-colors duration-300 hover:text-[#1bdddd]"
               >
                 {translations.about_us}
-              </PoppinsText>
+              </InterText>
             </Link>
           </div>
         </div>
@@ -137,18 +137,18 @@ export default function NavBar({ translations }: NavBarProps) {
             ✖
           </button>
           <div className="flex h-full flex-col p-4">
-            <PoppinsText
+            <InterText
               tag="h1"
               fontSize="19px"
               className="mx-auto mt-2 w-fit text-black"
             >
               {translations.cart.title}
-            </PoppinsText>
+            </InterText>
             <hr className="my-3 border-gray-300 lg:my-4" />
             {cartItems.length === 0 ? (
-              <PoppinsText tag="h1" fontSize="16px" style="bold">
+              <InterText tag="h1" fontSize="16px" style="bold">
                 {translations.cart.empty}
-              </PoppinsText>
+              </InterText>
             ) : (
               <ul className="flex-1 overflow-y-auto">
                 {cartItems.map((item) => (
@@ -164,34 +164,34 @@ export default function NavBar({ translations }: NavBarProps) {
                       className="mr-4 rounded-md"
                     />
                     <div className="flex flex-col items-center justify-center gap-4">
-                      <PoppinsText
+                      <InterText
                         tag="h1"
                         fontSize="16px"
                         className="text-center"
                       >
                         {item.name}
-                      </PoppinsText>
-                      <PoppinsText tag="h1" fontSize="16px">
+                      </InterText>
+                      <InterText tag="h1" fontSize="16px">
                         {translations.cart.quantity} {item.quantity}
-                      </PoppinsText>
+                      </InterText>
                     </div>
                     <div className="flex flex-col items-center justify-center gap-2">
-                      <PoppinsText tag="h1" fontSize="16px">
+                      <InterText tag="h1" fontSize="16px">
                         {item.price} €
-                      </PoppinsText>
+                      </InterText>
                       <button
                         onClick={() => removeFromCart(item.id)}
                         aria-label="Remove from Cart"
                         className="flex items-center justify-center space-x-2"
                       >
                         <Delete />
-                        <PoppinsText
+                        <InterText
                           tag="h1"
                           fontSize="16px"
                           className="text-red-500"
                         >
                           {translations.cart.remove}
-                        </PoppinsText>
+                        </InterText>
                       </button>
                     </div>
                   </li>
@@ -200,12 +200,12 @@ export default function NavBar({ translations }: NavBarProps) {
             )}
             <div className="mb-6 mt-4 border-t pt-4">
               <div className="flex justify-between">
-                <PoppinsText tag="h1" fontSize="16px" className="font-bold">
+                <InterText tag="h1" fontSize="16px" className="font-bold">
                   {translations.cart.subtotal}
-                </PoppinsText>
-                <PoppinsText tag="h1" fontSize="16px" className="font-bold">
+                </InterText>
+                <InterText tag="h1" fontSize="16px" className="font-bold">
                   {formattedTotalPrice} €
-                </PoppinsText>
+                </InterText>
               </div>
               <Link href="/cart">
                 <button
@@ -213,9 +213,9 @@ export default function NavBar({ translations }: NavBarProps) {
                   onClick={() => setIsCartOpen(false)}
                   aria-label="Continue to Cart"
                 >
-                  <PoppinsText tag="h1" fontSize="16px" className="text-white">
+                  <InterText tag="h1" fontSize="16px" className="text-white">
                     {translations.cart.title}
-                  </PoppinsText>
+                  </InterText>
                 </button>
               </Link>
             </div>
