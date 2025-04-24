@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { PoppinsText } from '@/components/atoms/poppins_text'
+import { PoppinsText } from '@/components/atoms/inter_text'
 import Delete from '@/components/atoms/svg/delete'
 import { useCart } from '@/components/molecules/cart_context/cart_context'
 import { useLocale } from 'next-intl'

@@ -1,4 +1,4 @@
-import { PoppinsText } from '@/components/atoms/poppins_text'
+import { InterText } from '@/components/atoms/inter_text'
 import { Link } from '@/i18n/routing'
 import { getTranslations } from 'next-intl/server'
 import Instagram from '@/components/atoms/svg/instagram'
@@ -17,63 +17,63 @@ export default async function Footer() {
           <div className="mb-2 mt-2 grid w-full grid-cols-2 items-center justify-center gap-3 text-center md:mt-0 md:flex md:gap-10">
             {/* Home Link */}
             <Link href="/">
-              <PoppinsText
+              <InterText
                 fontSize="16px"
                 style="bold"
                 className="relative mx-auto block w-fit text-white after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-[#ccb32b] after:transition after:duration-300 after:content-[''] hover:text-white after:hover:scale-x-100"
               >
                 {t('home')}
-              </PoppinsText>
+              </InterText>
             </Link>
             {/* About Us Link */}
             <Link href="/about_us">
-              <PoppinsText
+              <InterText
                 fontSize="16px"
                 style="bold"
                 className="relative mx-auto block w-fit text-white after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-[#ccb32b] after:transition after:duration-300 after:content-[''] hover:text-white after:hover:scale-x-100"
               >
                 {t('about_us')}
-              </PoppinsText>
+              </InterText>
             </Link>
             {/* Products Link */}
             <Link href="/collections">
-              <PoppinsText
+              <InterText
                 fontSize="16px"
                 style="bold"
                 className="relative mx-auto block w-fit text-white after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-[#ccb32b] after:transition after:duration-300 after:content-[''] hover:text-white after:hover:scale-x-100"
               >
                 {t('products')}
-              </PoppinsText>
+              </InterText>
             </Link>
             {/* Cookies Link */}
             <Link href="/cookies_policy">
-              <PoppinsText
+              <InterText
                 fontSize="16px"
                 style="bold"
                 className="relative mx-auto block w-fit text-white after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-[#ccb32b] after:transition after:duration-300 after:content-[''] hover:text-white after:hover:scale-x-100"
               >
                 {t('cookies')}
-              </PoppinsText>
+              </InterText>
             </Link>
             {/* Privacy Policy Link */}
             <Link href="/privacy_policy">
-              <PoppinsText
+              <InterText
                 fontSize="16px"
                 style="bold"
                 className="relative mx-auto block w-fit text-white after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-[#ccb32b] after:transition after:duration-300 after:content-[''] hover:text-white after:hover:scale-x-100"
               >
                 {t('privacy')}
-              </PoppinsText>
+              </InterText>
             </Link>
             {/* Terms and conditions Link */}
             <Link href="/terms_and_conditions">
-              <PoppinsText
+              <InterText
                 fontSize="16px"
                 style="bold"
                 className="relative mx-auto block w-fit text-white after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-[#ccb32b] after:transition after:duration-300 after:content-[''] hover:text-white after:hover:scale-x-100"
               >
                 {t('terms_and_conditions')}
-              </PoppinsText>
+              </InterText>
             </Link>
           </div>
         </div>
@@ -95,13 +95,13 @@ export default async function Footer() {
               className="my-auto h-5 w-5 transition-all duration-300 ease-in-out hover:scale-110"
             />
             {/* Phone Number */}
-            <PoppinsText
+            <InterText
               fontSize="16px"
               style="bold"
               className="relative block w-fit pl-2 text-white after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-[#ccb32b] after:transition after:duration-300 after:content-[''] hover:text-white after:hover:scale-x-100"
             >
               +34 828042420
-            </PoppinsText>
+            </InterText>
           </a>
           {/* Facebook Link */}
           <a
@@ -144,13 +144,13 @@ export default async function Footer() {
               className="my-auto h-5 w-5 transition-all duration-300 ease-in-out hover:scale-110"
             />
             {/* Whatsapp Number */}
-            <PoppinsText
+            <InterText
               fontSize="16px"
               style="bold"
               className="relative block w-fit pl-2 text-white after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-[#ccb32b] after:transition after:duration-300 after:content-[''] hover:text-white after:hover:scale-x-100"
             >
               672652638
-            </PoppinsText>
+            </InterText>
           </a>
         </div>
 
@@ -160,13 +160,13 @@ export default async function Footer() {
         </div>
 
         <div className="flex items-center justify-center gap-6 pt-4">
-          <PoppinsText fontSize="16px" className="text-white" style="bold">
+          <InterText fontSize="16px" className="text-white" style="bold">
             DC Wine © 2025
-          </PoppinsText>
+          </InterText>
           <div className="flex items-center gap-2">
-            <PoppinsText fontSize="16px" className="text-white" style="bold">
+            <InterText fontSize="16px" className="text-white" style="bold">
               Created by{' '}
-            </PoppinsText>
+            </InterText>
             <a
               href="https://www.enriquesuarez.dev"
               target="_blank"

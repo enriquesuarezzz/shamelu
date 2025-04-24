@@ -1,4 +1,4 @@
-import { PoppinsText } from '@/components/atoms/poppins_text'
+import { PoppinsText } from '@/components/atoms/inter_text'
 import { getTranslations } from 'next-intl/server'
 
 export async function generateMetadata() {

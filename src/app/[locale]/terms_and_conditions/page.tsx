@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server'
-import { PoppinsText } from '@/components/atoms/poppins_text'
+import { PoppinsText } from '@/components/atoms/inter_text'
 export async function generateMetadata() {
   const t = await getTranslations('terms_and_conditions_page')
 

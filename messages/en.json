@@ -1,12 +1,12 @@
 {
   "home_page": {
-    "meta_title": "Home - DcWine",
-    "meta_description": "Welcome to DcWine, your trusted platform to discover and purchase the finest wines, directly from the best wineries.",
+    "meta_title": "Home - Shamelu",
+    "meta_description": "Welcome to Shamelu, your trusted platform to discover and purchase the finest designs and complements",
     "header": {
-      "header_title": "New arrivals",
-      "title": "DCWine <br/> the Passion",
-      "subtitle": "lorem ipsum dolor sit amet consectetur adipiscing elit",
-      "button": "Shop Now"
+      "image1_title": "Editorial 2025",
+      "image2_title": "Summer Collection",
+      "image3_title": "Street Style",
+      "image4_title": "Winter Colecction"
     },
     "top_selling_products": {
       "title": "Discover our top selling products",

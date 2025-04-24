@@ -1,13 +1,13 @@
 'use client'
-import { Poppins } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import { forwardRef } from 'react'
 
-export const poppins = Poppins({
+export const inter = Inter({
   subsets: ['latin'],
-  weight: ['300', '400', '600', '700'],
+  weight: ['400', '600', '700'],
 })
 
-export interface PoppinsTextProps {
+export interface InterTextProps {
   children: React.ReactNode // Allow JSX as children
   tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p'
   style?: 'light' | 'normal' | 'semibold' | 'bold'
@@ -22,13 +22,14 @@ export interface PoppinsTextProps {
     | '32px'
     | '44px'
     | '56px'
+    | '192px'
   leading?: 'normal' | 'none' | 'tight' | 'snug' | 'relaxed' | 'loose'
   className?: string
 }
 
-export const PoppinsText = forwardRef<
+export const InterText = forwardRef<
   HTMLHeadingElement | HTMLParagraphElement,
-  PoppinsTextProps
+  InterTextProps
 >(
   (
     {
@@ -63,6 +64,8 @@ export const PoppinsText = forwardRef<
           return 'text-[22px]  md:text-[44px]'
         case '56px':
           return 'text-[26px] md:text-[42px] lg:text-[56px]'
+        case '192px':
+          return 'text-[192px]'
       }
     }
 
@@ -96,7 +99,7 @@ export const PoppinsText = forwardRef<
       }
     }
 
-    const globalStyle = `${poppins.className} ${getSize()} ${getLeading()} ${getStyle()} antialiased`
+    const globalStyle = `${inter.className} ${getSize()} ${getLeading()} ${getStyle()} antialiased`
 
     function getTag() {
       switch (tag) {
@@ -149,4 +152,4 @@ export const PoppinsText = forwardRef<
   },
 )
 
-PoppinsText.displayName = 'PoppinsText'
+InterText.displayName = 'InterText'

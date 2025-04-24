@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Link } from '@/i18n/routing'
-import { PoppinsText } from '@/components/atoms/poppins_text'
+import { InterText } from '@/components/atoms/inter_text'
 import Cart from '@/components/atoms/svg/cart'
 import Spanish from '@/components/atoms/svg/spanish'
 import English from '@/components/atoms/svg/english'
@@ -71,49 +71,49 @@ export function MobileMenu({ translations, setIsCartOpen }: MobileMenuProps) {
           </button>
           <nav className="flex flex-col items-center gap-6">
             <Link href="/" onClick={() => handleNavigation('/')}>
-              <PoppinsText
+              <InterText
                 tag="h1"
                 fontSize="32px"
                 style="bold"
                 className="text-white hover:scale-110"
               >
                 {translations.home}
-              </PoppinsText>
+              </InterText>
             </Link>
             <Link
               href="/about_us"
               onClick={() => handleNavigation('/about_us')}
             >
-              <PoppinsText
+              <InterText
                 tag="h1"
                 fontSize="32px"
                 style="bold"
                 className="text-white hover:scale-110"
               >
                 {translations.about_us}
-              </PoppinsText>
+              </InterText>
             </Link>
             <Link
               href="/collections"
               onClick={() => handleNavigation('/products')}
             >
-              <PoppinsText
+              <InterText
                 tag="h1"
                 fontSize="32px"
                 style="bold"
                 className="text-white hover:scale-110"
               >
                 {translations.products}
-              </PoppinsText>
+              </InterText>
             </Link>
-            <PoppinsText
+            <InterText
               tag="h1"
               fontSize="32px"
               style="bold"
               className="text-white hover:scale-110"
             >
               {translations.select_language}
-            </PoppinsText>
+            </InterText>
             <div className="flex items-center space-x-4">
               <button
                 aria-label="Change language to Spanish"

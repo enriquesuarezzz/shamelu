@@ -2,7 +2,7 @@
 import { COOKIE_CONSENT, CookieClient } from '@/utils/cookie'
 import { useState, useEffect } from 'react'
 import { Open_Sans } from 'next/font/google'
-import { PoppinsText } from '@/components/atoms/poppins_text'
+import { PoppinsText } from '@/components/atoms/inter_text'
 import Cookies from '@/components/atoms/svg/cookies'
 
 export const openSans = Open_Sans({ subsets: ['latin'] })

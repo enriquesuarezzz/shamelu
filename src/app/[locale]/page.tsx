@@ -1,3 +1,4 @@
+import Header from '@/components/molecules/header/header'
 import { getTranslations } from 'next-intl/server'
 
 export async function generateMetadata() {
@@ -11,5 +12,9 @@ export async function generateMetadata() {
 
 export default async function HomePage() {
   const t = await getTranslations('home_page')
-  return <main className="flex min-h-screen flex-col"></main>
+  return (
+    <main className="mx-auto flex min-h-screen max-w-[1520px] flex-col">
+      <Header />
+    </main>
+  )
 }
