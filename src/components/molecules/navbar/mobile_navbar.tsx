@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Link } from '@/i18n/routing'
-import { InterText } from '@/components/atoms/poppins_text'
+import { InterText } from '@/components/atoms/inter_text'
 import Cart from '@/components/atoms/svg/cart'
 import Spanish from '@/components/atoms/svg/spanish'
 import English from '@/components/atoms/svg/english'

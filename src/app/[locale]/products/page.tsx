@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server'
-import { PoppinsText } from '@/components/atoms/poppins_text'
+import { PoppinsText } from '@/components/atoms/inter_text'
 import Products from '@/components/molecules/products/products'
 
 export async function generateMetadata() {

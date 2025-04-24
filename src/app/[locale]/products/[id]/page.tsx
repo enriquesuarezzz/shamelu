@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { useLocale } from 'next-intl'
-import { PoppinsText } from '@/components/atoms/poppins_text'
+import { PoppinsText } from '@/components/atoms/inter_text'
 import { getProductById } from '../../../../../lib/firestore'
 import { Product } from '../../../../../types/products'
 import { useCart } from '@/components/molecules/cart_context/cart_context'

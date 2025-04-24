@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { useLocale } from 'next-intl'
 import Check from '@/components/atoms/svg/check'
 import Link from 'next/link'
-import { PoppinsText } from '@/components/atoms/poppins_text'
+import { PoppinsText } from '@/components/atoms/inter_text'
 
 // payment status and get locale
 const SuccessPage = () => {

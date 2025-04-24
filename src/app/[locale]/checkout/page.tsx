@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { useCart } from '@/components/molecules/cart_context/cart_context'
-import { PoppinsText } from '@/components/atoms/poppins_text'
+import { PoppinsText } from '@/components/atoms/inter_text'
 import { loadStripe } from '@stripe/stripe-js'
 import { useLocale } from 'next-intl'
 

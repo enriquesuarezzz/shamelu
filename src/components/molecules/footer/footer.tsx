@@ -1,4 +1,4 @@
-import { InterText } from '@/components/atoms/poppins_text'
+import { InterText } from '@/components/atoms/inter_text'
 import { Link } from '@/i18n/routing'
 import { getTranslations } from 'next-intl/server'
 import Instagram from '@/components/atoms/svg/instagram'

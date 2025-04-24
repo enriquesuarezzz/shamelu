@@ -1,5 +1,5 @@
 'use client'
-import { InterText } from '@/components/atoms/poppins_text'
+import { InterText } from '@/components/atoms/inter_text'
 import { Link } from '@/i18n/routing'
 import LocaleSwitcher from '../locale_switcher/locale_switcher'
 import Cart from '@/components/atoms/svg/cart'
