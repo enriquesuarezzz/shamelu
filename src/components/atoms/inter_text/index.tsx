@@ -65,7 +65,7 @@ export const InterText = forwardRef<
         case '56px':
           return 'text-[26px] md:text-[42px] lg:text-[56px]'
         case '192px':
-          return 'text-[192px]'
+          return 'text-[62px] md:text-[100px] lg:text-[192px]'
       }
     }
 

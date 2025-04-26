@@ -64,8 +64,9 @@
   },
   "footer": {
     "home": "Home",
+    "collections": "Collections",
+    "shop": "Shop",
     "about_us": "About Us",
-    "products": "Products",
     "cookies": "Cookies Policy",
     "privacy": "Privacy Policy",
     "terms_and_conditions": "Terms and conditions",

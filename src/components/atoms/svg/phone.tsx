@@ -11,7 +11,7 @@ export default function Phone(props: SVGProps<SVGSVGElement>) {
     >
       <path
         fill="none"
-        stroke="white"
+        stroke="black"
         strokeDasharray="64"
         strokeDashoffset="64"
         strokeLinecap="round"

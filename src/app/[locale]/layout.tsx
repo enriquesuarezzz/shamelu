@@ -9,6 +9,7 @@ import { Barlow, Geist_Mono } from 'next/font/google'
 
 import { CartProvider } from '@/components/molecules/cart_context/cart_context'
 import CookiesPopup from '@/components/molecules/cookies_pop_up/cookies_pop_up'
+import Footer from '@/components/molecules/footer/footer'
 
 const BarlowText = Barlow({
   subsets: ['latin'],
@@ -45,7 +46,8 @@ export default async function RootLayout({
   const navbarTranslations = messages.navbar as {
     home: string
     about_us: string
-    products: string
+    collections: string
+    shop: string
     select_language: string
     search_bar: {
       search_placeholder: string
@@ -76,6 +78,7 @@ export default async function RootLayout({
             <main className="flex-1">{children}</main>
           </CartProvider>
           <CookiesPopup translations={cookiesTranslations} />
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

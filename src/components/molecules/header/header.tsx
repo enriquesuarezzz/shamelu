@@ -34,7 +34,7 @@ export default async function Header() {
 
   return (
     <>
-      <div className="mt-64 box-border grid h-full w-full grid-cols-4 gap-6 px-6 py-2">
+      <div className="mt-44 box-border grid h-full w-full grid-cols-2 gap-10 px-6 py-2 md:mt-64 md:grid-cols-4 md:gap-6">
         {images.map((image, index) => (
           <div
             key={index}
@@ -53,7 +53,7 @@ export default async function Header() {
           </div>
         ))}
       </div>
-      <div className="flex items-end justify-center pt-16">
+      <div className="flex items-end justify-center pt-20">
         <InterText
           tag="h1"
           fontSize="192px"
