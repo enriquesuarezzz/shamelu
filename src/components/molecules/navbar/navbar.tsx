@@ -13,8 +13,9 @@ import Image from 'next/image'
 interface NavBarProps {
   translations: {
     home: string
+    collections: string
+    shop: string
     about_us: string
-    products: string
     select_language: string
     search_bar: {
       search_placeholder: string
@@ -47,7 +48,7 @@ export default function NavBar({ translations }: NavBarProps) {
   const formattedTotalPrice = totalPrice.toFixed(2)
 
   return (
-    <div className="fixed left-0 top-0 z-50 flex w-full flex-row items-center justify-between border-b border-neutral-200 px-6 py-8 text-white md:px-20">
+    <div className="fixed left-0 top-0 z-50 flex w-full flex-row items-center justify-between border-b border-neutral-200 bg-white px-6 py-8 text-white md:px-20">
       <div className="flex w-full items-center justify-between">
         {/* Left Section: Logo + Nav Links */}
         <div className="flex items-center gap-16">
@@ -112,7 +113,8 @@ export default function NavBar({ translations }: NavBarProps) {
         translations={{
           home: translations.home,
           about_us: translations.about_us,
-          products: translations.products,
+          collections: translations.collections,
+          shop: translations.shop,
           select_language: translations.select_language,
           search_placeholder: translations.search_bar.search_placeholder,
           no_results: translations.search_bar.no_results,
