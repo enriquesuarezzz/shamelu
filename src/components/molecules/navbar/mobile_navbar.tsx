@@ -14,7 +14,8 @@ interface MobileMenuProps {
   translations: {
     home: string
     about_us: string
-    products: string
+    collections: string
+    shop: string
     select_language: string
     search_placeholder: string
     no_results: string
@@ -90,7 +91,7 @@ export function MobileMenu({ translations, setIsCartOpen }: MobileMenuProps) {
                 style="bold"
                 className="text-white hover:scale-110"
               >
-                {translations.about_us}
+                {translations.collections}
               </InterText>
             </Link>
             <Link
@@ -103,7 +104,20 @@ export function MobileMenu({ translations, setIsCartOpen }: MobileMenuProps) {
                 style="bold"
                 className="text-white hover:scale-110"
               >
-                {translations.products}
+                {translations.shop}
+              </InterText>
+            </Link>
+            <Link
+              href="/about_us"
+              onClick={() => handleNavigation('/products')}
+            >
+              <InterText
+                tag="h1"
+                fontSize="32px"
+                style="bold"
+                className="text-white hover:scale-110"
+              >
+                {translations.about_us}
               </InterText>
             </Link>
             <InterText
@@ -119,7 +133,7 @@ export function MobileMenu({ translations, setIsCartOpen }: MobileMenuProps) {
                 aria-label="Change language to Spanish"
                 onClick={() => changeLanguage('es')}
               >
-                <Spanish className="h-8 w-8 hover:scale-110" />
+                <Spanish className="h-8 w-8 rounded-full hover:scale-110" />
               </button>
               <button
                 aria-label="Change language to English"
