@@ -11,11 +11,7 @@ export default {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
-        custom_gray: '#737373',
-        light_gold: '#f9f2d2',
-        gold: '#e5ca3a',
-        hover_gold: '#f0cc0d',
-        mate_black: '#111111',
+        electric_blue: '#1bdddd',
       },
     },
   },
