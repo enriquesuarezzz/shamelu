@@ -10,8 +10,7 @@ export async function generateMetadata() {
   }
 }
 
-export default async function HomePage() {
-  const t = await getTranslations('home_page')
+export default function HomePage() {
   return (
     <main className="mx-auto flex min-h-screen max-w-[1520px] flex-col">
       <Header />

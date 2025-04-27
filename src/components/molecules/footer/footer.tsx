@@ -18,7 +18,7 @@ export default async function Footer() {
             <Link href="/">
               <InterText
                 fontSize="16px"
-                className="after:bg-electric_blue relative block w-fit pl-2 text-center after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
+                className="relative block w-fit pl-2 text-center after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-electric_blue after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
               >
                 {t('home')}
               </InterText>
@@ -27,7 +27,7 @@ export default async function Footer() {
             <Link href="/collections">
               <InterText
                 fontSize="16px"
-                className="after:bg-electric_blue relative block w-fit pl-2 after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
+                className="relative block w-fit pl-2 after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-electric_blue after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
               >
                 {t('collections')}
               </InterText>
@@ -36,7 +36,7 @@ export default async function Footer() {
             <Link href="/shop">
               <InterText
                 fontSize="16px"
-                className="after:bg-electric_blue relative block w-fit pl-2 after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
+                className="relative block w-fit pl-2 after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-electric_blue after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
               >
                 {t('shop')}
               </InterText>
@@ -45,7 +45,7 @@ export default async function Footer() {
             <Link href="/about_us">
               <InterText
                 fontSize="16px"
-                className="after:bg-electric_blue relative block w-fit pl-2 after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
+                className="relative block w-fit pl-2 after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-electric_blue after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
               >
                 {t('about_us')}
               </InterText>
@@ -54,7 +54,7 @@ export default async function Footer() {
             <Link href="/cookies_policy">
               <InterText
                 fontSize="16px"
-                className="after:bg-electric_blue relative block w-fit pl-2 after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
+                className="relative block w-fit pl-2 after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-electric_blue after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
               >
                 {t('cookies')}
               </InterText>
@@ -63,7 +63,7 @@ export default async function Footer() {
             <Link href="/privacy_policy">
               <InterText
                 fontSize="16px"
-                className="after:bg-electric_blue relative block w-fit pl-2 after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
+                className="relative block w-fit pl-2 after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-electric_blue after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
               >
                 {t('privacy')}
               </InterText>
@@ -72,7 +72,7 @@ export default async function Footer() {
             <Link href="/terms_and_conditions">
               <InterText
                 fontSize="16px"
-                className="after:bg-electric_blue relative block w-fit pl-2 after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
+                className="relative block w-fit pl-2 after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-electric_blue after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
               >
                 {t('terms_and_conditions')}
               </InterText>
@@ -86,7 +86,7 @@ export default async function Footer() {
         <div className="flex flex-wrap items-center justify-center gap-4 pt-2 md:gap-6 md:pt-4">
           {/* Phone Link */}
           <a
-            href="tel:+34828042420"
+            href="tel:+34670082769"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-1 transition-all duration-300 hover:scale-105"
@@ -96,26 +96,26 @@ export default async function Footer() {
             {/* Phone Number */}
             <InterText
               fontSize="16px"
-              className="after:bg-electric_blue relative block w-fit pl-2 after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
+              className="relative block w-fit pl-2 after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-electric_blue after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
             >
-              +34 828042420
+              +34 670082769
             </InterText>
           </a>
 
           {/* Instagram Link */}
           <a
-            href="https://www.instagram.com/dcwinelanzarote/"
+            href="https://www.instagram.com/shameluu___/?hl=es"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-1 transition-all duration-300 hover:scale-105"
-            aria-label="DC Wine Instagram"
+            aria-label="Shamelu Instagram"
           >
             {/* Instagram Icon */}
             <Instagram className="my-auto h-5 w-5 transition-all duration-300 ease-in-out hover:scale-110" />
           </a>
           {/* Whatsapp Link */}
           <a
-            href="https://wa.me/672652638"
+            href="https://wa.me/670082769"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-1 transition-all duration-300 hover:scale-105"
@@ -125,9 +125,9 @@ export default async function Footer() {
             {/* Whatsapp Number */}
             <InterText
               fontSize="16px"
-              className="after:bg-electric_blue relative block w-fit pl-2 after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
+              className="relative block w-fit pl-2 after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-electric_blue after:transition after:duration-300 after:content-[''] after:hover:scale-x-100"
             >
-              672652638
+              670082769
             </InterText>
           </a>
         </div>

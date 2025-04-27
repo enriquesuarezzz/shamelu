@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server'
-import { PoppinsText } from '@/components/atoms/inter_text'
+import { InterText } from '@/components/atoms/inter_text'
 export async function generateMetadata() {
   const t = await getTranslations('terms_and_conditions_page')
 
@@ -14,57 +14,57 @@ export default async function TermsAndConditionsPage() {
   return (
     <div className="mx-6 flex flex-col justify-center gap-4 pt-24 md:mx-20">
       {/* Title */}
-      <PoppinsText fontSize="56px" style="bold">
+      <InterText fontSize="56px" style="bold">
         {t('title')}
-      </PoppinsText>
+      </InterText>
       {/* First Paragraph */}
-      <PoppinsText fontSize="16px" className="">
+      <InterText fontSize="16px" className="">
         <span
           dangerouslySetInnerHTML={{
             __html: t('first_paragraph'),
           }}
         />
-      </PoppinsText>
+      </InterText>
       {/* First List */}
       <ul className="list-inside list-disc">
         <li>
-          <PoppinsText fontSize="14px" className="inline">
+          <InterText fontSize="14px" className="inline">
             {t('list_1.li_1')}
-          </PoppinsText>
+          </InterText>
         </li>
         <li>
-          <PoppinsText fontSize="14px" className="inline">
+          <InterText fontSize="14px" className="inline">
             {t('list_1.li_2')}
-          </PoppinsText>
+          </InterText>
         </li>
       </ul>
-      <PoppinsText fontSize="16px">{t('after_list')}</PoppinsText>
+      <InterText fontSize="16px">{t('after_list')}</InterText>
       {/* Second List */}
       <ul className="list-inside list-disc">
         <li>
-          <PoppinsText fontSize="14px" className="inline">
+          <InterText fontSize="14px" className="inline">
             {t('list_2.li_1')}
-          </PoppinsText>
+          </InterText>
         </li>
         <li>
-          <PoppinsText fontSize="14px" className="inline">
+          <InterText fontSize="14px" className="inline">
             {t('list_2.li_2')}
-          </PoppinsText>
+          </InterText>
         </li>
         <li>
-          <PoppinsText fontSize="14px" className="inline">
+          <InterText fontSize="14px" className="inline">
             {t('list_2.li_3')}
-          </PoppinsText>
+          </InterText>
         </li>
       </ul>
       {/* Last Paragraph */}
-      <PoppinsText fontSize="16px" className="">
+      <InterText fontSize="16px" className="">
         <span
           dangerouslySetInnerHTML={{
             __html: t('last_paragraph'),
           }}
         />
-      </PoppinsText>
+      </InterText>
     </div>
   )
 }

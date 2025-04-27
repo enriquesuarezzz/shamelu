@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { PoppinsText } from '@/components/atoms/inter_text'
+import { InterText } from '@/components/atoms/inter_text'
 import Delete from '@/components/atoms/svg/delete'
 import { useCart } from '@/components/molecules/cart_context/cart_context'
 import { useLocale } from 'next-intl'
@@ -51,31 +51,27 @@ const CartContent = ({ translations }: CartContentProps) => {
   return (
     <div className="mx-4 flex flex-col justify-between gap-4 pt-24 md:px-10 lg:mx-24 lg:flex-row lg:gap-20 lg:px-4 lg:pt-32">
       <div className="w-full p-1 md:p-6 lg:w-2/3">
-        <PoppinsText fontSize="28px" style="bold" className="pb-10">
+        <InterText fontSize="28px" style="bold" className="pb-10">
           {translations.title}
-        </PoppinsText>
+        </InterText>
 
         {clientCart.length === 0 ? (
           <div className="mt-10 flex justify-center">
-            <PoppinsText fontSize="16px" style="bold">
+            <InterText fontSize="16px" style="bold">
               {translations.empty}
-            </PoppinsText>
+            </InterText>
           </div>
         ) : (
           <div className="w-full">
             <div className="grid grid-cols-12 border-b pb-2 text-center">
               <div className="col-span-6 text-left">
-                <PoppinsText fontSize="22px">
-                  {translations.product}
-                </PoppinsText>
+                <InterText fontSize="22px">{translations.product}</InterText>
               </div>
               <div className="col-span-4">
-                <PoppinsText fontSize="22px">
-                  {translations.quantity}
-                </PoppinsText>
+                <InterText fontSize="22px">{translations.quantity}</InterText>
               </div>
               <div className="col-span-2">
-                <PoppinsText fontSize="22px">{translations.price}</PoppinsText>
+                <InterText fontSize="22px">{translations.price}</InterText>
               </div>
             </div>
             {clientCart.map((item) => (
@@ -89,7 +85,7 @@ const CartContent = ({ translations }: CartContentProps) => {
                     alt={item.name}
                     className="max-h-[50px] rounded-md object-cover md:max-h-[100px]"
                   />
-                  <PoppinsText fontSize="19px">{item.name}</PoppinsText>
+                  <InterText fontSize="19px">{item.name}</InterText>
                 </div>
                 <div className="col-span-4 flex flex-col items-center gap-1 md:gap-2">
                   <div className="flex items-center gap-2">
@@ -99,7 +95,7 @@ const CartContent = ({ translations }: CartContentProps) => {
                     >
                       -
                     </button>
-                    <PoppinsText fontSize="16px">{item.quantity}</PoppinsText>
+                    <InterText fontSize="16px">{item.quantity}</InterText>
                     <button
                       className="rounded bg-gray-300 px-2 py-1 text-black hover:bg-gray-400"
                       onClick={() => increaseQuantity(item.id)}
@@ -112,15 +108,15 @@ const CartContent = ({ translations }: CartContentProps) => {
                     onClick={() => removeFromCart(item.id)}
                   >
                     <Delete />
-                    <PoppinsText fontSize="16px" className="text-red-500">
+                    <InterText fontSize="16px" className="text-red-500">
                       {translations.remove}
-                    </PoppinsText>
+                    </InterText>
                   </button>
                 </div>
                 <div className="col-span-2 text-center">
-                  <PoppinsText fontSize="19px">
+                  <InterText fontSize="19px">
                     {item.price.toFixed(2)} €
-                  </PoppinsText>
+                  </InterText>
                 </div>
               </div>
             ))}
@@ -130,30 +126,28 @@ const CartContent = ({ translations }: CartContentProps) => {
 
       {clientCart.length > 0 && (
         <div className="w-full rounded-lg bg-white p-2 pt-4 md:p-10 lg:w-1/3 lg:p-6 lg:pt-10">
-          <PoppinsText fontSize="22px" style="bold">
+          <InterText fontSize="22px" style="bold">
             {translations.total}
-          </PoppinsText>
+          </InterText>
 
           <div className="mt-4 flex justify-between">
-            <PoppinsText fontSize="16px">{translations.subtotal}</PoppinsText>
-            <PoppinsText fontSize="16px">{subtotal.toFixed(2)} €</PoppinsText>
+            <InterText fontSize="16px">{translations.subtotal}</InterText>
+            <InterText fontSize="16px">{subtotal.toFixed(2)} €</InterText>
           </div>
 
           <div className="mt-2 flex justify-between">
-            <PoppinsText fontSize="16px">{translations.shipping}</PoppinsText>
-            <PoppinsText fontSize="16px">
-              {shippingCost.toFixed(2)} €
-            </PoppinsText>
+            <InterText fontSize="16px">{translations.shipping}</InterText>
+            <InterText fontSize="16px">{shippingCost.toFixed(2)} €</InterText>
           </div>
 
           <div className="mt-2 flex justify-between">
-            <PoppinsText fontSize="16px">IGIC (7%)</PoppinsText>
-            <PoppinsText fontSize="16px">{igic.toFixed(2)} €</PoppinsText>
+            <InterText fontSize="16px">IGIC (7%)</InterText>
+            <InterText fontSize="16px">{igic.toFixed(2)} €</InterText>
           </div>
 
           <div className="mt-4 flex justify-between border-t pt-4 font-bold">
-            <PoppinsText fontSize="16px">{translations.total}</PoppinsText>
-            <PoppinsText fontSize="16px">{total.toFixed(2)} €</PoppinsText>
+            <InterText fontSize="16px">{translations.total}</InterText>
+            <InterText fontSize="16px">{total.toFixed(2)} €</InterText>
           </div>
 
           <button

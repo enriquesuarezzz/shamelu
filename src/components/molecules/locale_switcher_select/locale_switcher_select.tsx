@@ -38,10 +38,10 @@ export default function LocaleSwitcherSelect({ defaultValue }: Props) {
 
   return (
     <Select defaultValue={defaultValue} onValueChange={onSelectChange}>
-      <SelectTrigger className="bg-transparent">
+      <SelectTrigger>
         <SelectValue>{localeIcons[defaultValue]}</SelectValue>
       </SelectTrigger>
-      <SelectContent className="flex rounded-lg bg-white p-2">
+      <SelectContent className="z-50 flex rounded-lg bg-white p-2">
         {routing.locales.map((locale) => (
           <SelectItem
             key={locale}
