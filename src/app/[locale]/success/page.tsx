@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { useLocale } from 'next-intl'
 import Check from '@/components/atoms/svg/check'
 import Link from 'next/link'
-import { PoppinsText } from '@/components/atoms/inter_text'
+import { InterText } from '@/components/atoms/inter_text'
 
 // payment status and get locale
 const SuccessPage = () => {
@@ -62,25 +62,25 @@ const SuccessPage = () => {
           {/* success icon */}
           <Check />
           {/* success title */}
-          <PoppinsText
+          <InterText
             fontSize="28px"
             style="semibold"
             className="pt-3 text-center"
           >
             {successMessage.title}
-          </PoppinsText>
+          </InterText>
           {/* success details */}
           <div className="mt-4">
-            <PoppinsText fontSize="16px" className="text-center text-gray-700">
+            <InterText fontSize="16px" className="text-center text-gray-700">
               {successMessage.details}
-            </PoppinsText>
+            </InterText>
             {/* continue shopping button */}
             <div className="mt-4 text-center">
               <Link href="/">
                 <button className="mt-3 w-full rounded bg-gray-800 py-2 text-white hover:bg-gray-900">
-                  <PoppinsText fontSize="14px" className="text-white">
+                  <InterText fontSize="14px" className="text-white">
                     {successMessage.button}
-                  </PoppinsText>
+                  </InterText>
                 </button>
               </Link>
             </div>
@@ -90,20 +90,17 @@ const SuccessPage = () => {
         // failure message
         <div className="w-full max-w-2xl rounded-lg bg-white p-8">
           {/* failure title */}
-          <PoppinsText
+          <InterText
             fontSize="28px"
             style="semibold"
             className="pt-3 text-center text-red-600"
           >
             {failureMessage.title}
-          </PoppinsText>
+          </InterText>
           {/* failure description */}
-          <PoppinsText
-            fontSize="16px"
-            className="pt-5 text-center text-gray-700"
-          >
+          <InterText fontSize="16px" className="pt-5 text-center text-gray-700">
             {failureMessage.description}
-          </PoppinsText>
+          </InterText>
         </div>
       )}
     </div>
