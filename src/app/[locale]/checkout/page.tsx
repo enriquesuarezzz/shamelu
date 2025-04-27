@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { useCart } from '@/components/molecules/cart_context/cart_context'
-import { PoppinsText } from '@/components/atoms/inter_text'
+import { InterText } from '@/components/atoms/inter_text'
 import { loadStripe } from '@stripe/stripe-js'
 import { useLocale } from 'next-intl'
 
@@ -97,9 +97,9 @@ const CheckoutPage = () => {
     <div className="mx-4 flex flex-col justify-between gap-6 pt-24 md:flex-row md:gap-20 md:px-10 md:pt-32 lg:mx-24 lg:px-4">
       {/* Left side - Form */}
       <div className="flex w-full max-w-[700px] flex-col gap-6">
-        <PoppinsText fontSize="28px" style="bold">
+        <InterText fontSize="28px" style="bold">
           {locale === 'es' ? 'Proceso de Compra' : 'Checkout'}
-        </PoppinsText>
+        </InterText>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <input
@@ -188,18 +188,18 @@ const CheckoutPage = () => {
             type="submit"
             className="mt-4 w-full rounded bg-gray-800 py-2 text-white hover:bg-gray-900"
           >
-            <PoppinsText fontSize="16px" className="text-white">
+            <InterText fontSize="16px" className="text-white">
               {locale === 'es' ? 'Proceder al Pago' : 'Proceed to Payment'}
-            </PoppinsText>
+            </InterText>
           </button>
         </form>
       </div>
 
       {/* Right side - Cart Details */}
       <div className="flex w-full flex-col border-gray-300 pl-6 pr-3 md:max-w-[500px] md:border-l md:pr-0">
-        <PoppinsText fontSize="20px" style="bold">
+        <InterText fontSize="20px" style="bold">
           {locale === 'es' ? 'Detalles del Carrito' : 'Cart Details'}
-        </PoppinsText>
+        </InterText>
 
         <div className="max-h-80 overflow-y-auto">
           {cartItems.length === 0 ? (
@@ -220,10 +220,10 @@ const CheckoutPage = () => {
                   className="h-16 w-16 rounded object-contain"
                 />
                 <div className="flex flex-col pl-2">
-                  <PoppinsText fontSize="16px">{item.name}</PoppinsText>
-                  <PoppinsText fontSize="14px">
+                  <InterText fontSize="16px">{item.name}</InterText>
+                  <InterText fontSize="14px">
                     {item.quantity} x ${item.price}
-                  </PoppinsText>
+                  </InterText>
                 </div>
               </div>
             ))
