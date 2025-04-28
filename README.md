@@ -21,8 +21,8 @@ This is a Next.js eCommerce application designed for selling fashion products. I
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/enriquesuarezzz/dc-wine.git
-cd dc-wine
+git clone https://github.com/enriquesuarezzz/shamelu.git
+cd shamelu
 ```
 
 ### 2. Install dependencies
@@ -73,15 +73,15 @@ STRIPE_SECRET_KEY=your-secret-key
  This will start the Next.js development server at http://localhost:3000.
 
  Firebase Setup
-For Firestore, create a collection for storing wine products. Each product can have the following structure:
+For Firestore, create a collection for storing products. Each product can have the following structure:
 ```bash
 {
   "id": "unique-id",
-  "name": "Wine Name",
-  "description": "Wine Description",
-  "price": 100,
-  "image_url": "https://example.com/wine-image.jpg",
-  "type": "red | white | sparkling"
+  "name": "Product Name",
+  "description": "Product Description",
+  "price": Product Price,
+  "image_url": "https://example.com/example.jpg",
+  "type": "type1 | type2 | type3"
 }
  ```
 
