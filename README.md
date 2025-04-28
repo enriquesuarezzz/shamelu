@@ -1,10 +1,10 @@
 # NextJS + Tailwind CSS Ecommerce with Firebase and Stripe
 
-This is a Next.js eCommerce application designed for selling swimsuits. It uses Firebase as the database and Stripe for processing payments.
+This is a Next.js eCommerce application designed for selling fashion products. It uses Firebase as the database and Stripe for processing payments.
 
 ## Features
 
-- **Product Management**: Manage and display wines (red, white, sparkling) stored in Firebase.
+- **Product Management**: Manage and display products stored in Firebase.
 - **Cart Functionality**: Add products to a cart, view cart items, and proceed to checkout.
 - **Stripe Payments**: Secure payment processing via Stripe.
 - **Responsive Design**: Fully responsive UI for both desktop and mobile users.
@@ -14,7 +14,7 @@ This is a Next.js eCommerce application designed for selling swimsuits. It uses 
 - **Frontend**: Next.js, React
 - **Database**: Firebase Firestore
 - **Payments**: Stripe API
-- **Styling**: Tailwind CSS (or your preferred CSS framework)
+- **Styling**: Tailwind CSS 
 
 ## Installation
 
