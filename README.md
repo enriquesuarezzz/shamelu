@@ -17,6 +17,7 @@ This is a Next.js eCommerce application designed for selling fashion products. I
 - **Frontend**: Next.js, React
 - **Database**: Firebase Firestore
 - **Payments**: Stripe API
+- **Emails**: Nodemailer
 - **Styling**: Tailwind CSS 
 
 ## Installation
@@ -69,7 +70,23 @@ NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your-publishable-key
 STRIPE_SECRET_KEY=your-secret-key
 ```
 
- ### 5. Run the Development Server
+
+ ### 5. Set up Nodemailer
+
+You will need an SMTP service (like Gmail, SendGrid, or any other) to send emails.
+Install Nodemailer:
+
+ ```bash
+npm install nodemailer
+ ```
+ Add email configuration to your .env.local:
+  ```bash
+BASE_URL=http://localhost:3000  (update for production)
+EMAIL_USER=your_email_user
+EMAIL_PASS=your_email_password
+ ```
+ 
+ ### 6. Run the Development Server
  ```bash
  npm run dev
  ```
