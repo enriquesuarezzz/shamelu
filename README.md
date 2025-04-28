@@ -7,6 +7,9 @@ This is a Next.js eCommerce application designed for selling fashion products. I
 - **Product Management**: Manage and display products stored in Firebase.
 - **Cart Functionality**: Add products to a cart, view cart items, and proceed to checkout.
 - **Stripe Payments**: Secure payment processing via Stripe.
+- **Order Email Notifications:**:
+   - Customers receive a confirmation email after purchasing.
+   - Store owner receives a notification email for each new order.
 - **Responsive Design**: Fully responsive UI for both desktop and mobile users.
 
 ## Tech Stack
