@@ -48,14 +48,20 @@ export default function NavBar({ translations }: NavBarProps) {
   const formattedTotalPrice = totalPrice.toFixed(2)
 
   return (
-    <div className="fixed left-0 top-0 z-50 flex w-full flex-row items-center justify-between border-b border-neutral-200 bg-white px-6 py-8 text-white md:px-20">
+    <div className="fixed left-0 top-0 z-50 flex w-full flex-row items-center justify-between border-b border-neutral-200 bg-white px-6 py-8 text-white lg:px-20">
       <div className="flex w-full items-center justify-between">
         {/* Left Section: Logo + Nav Links */}
-        <div className="flex items-center gap-16">
+        <div className="flex items-center">
           <Link href="/" className="flex items-center gap-2">
-            <Image src="/images/logo.avif" alt="Logo" width={100} height={60} />
+            <Image
+              src="/images/logo.avif"
+              alt="Logo"
+              width={50}
+              height={50}
+              className="mr-10 h-auto w-auto"
+            />
           </Link>
-          <div className="hidden items-center gap-16 md:flex">
+          <div className="hidden items-center gap-10 md:flex lg:gap-16">
             <Link href="/">
               <InterText
                 tag="h1"

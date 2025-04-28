@@ -46,7 +46,7 @@ export default function CookiesModal({ translations }: CookiesModalProps) {
 
   return (
     showModal && (
-      <div className="bg-mate_black fixed bottom-0 left-0 z-40 flex h-fit w-fit flex-col justify-between gap-6 rounded-t-3xl px-6 py-10 backdrop-blur-sm md:bottom-4 md:left-4 md:rounded-3xl">
+      <div className="fixed bottom-0 left-0 z-40 flex h-fit w-fit flex-col justify-between gap-6 rounded-t-3xl bg-gray-600/25 px-6 py-10 backdrop-blur-sm md:bottom-4 md:left-4 md:rounded-3xl">
         <div className="flex h-fit w-full max-w-[300px] flex-col gap-10">
           {/* Title + description */}
           <div className="flex h-fit w-full flex-col gap-5 text-center">
@@ -54,7 +54,6 @@ export default function CookiesModal({ translations }: CookiesModalProps) {
               {/* Title */}
               <InterText
                 fontSize="32px"
-                style="semibold"
                 className="text-gold max-w-[500px] text-center"
               >
                 {translations.title}
@@ -65,7 +64,6 @@ export default function CookiesModal({ translations }: CookiesModalProps) {
             <div className="flex h-fit w-full flex-col gap-4">
               <InterText
                 fontSize="14px"
-                style="semibold"
                 className="text-gold max-w-[500px] text-center"
               >
                 {translations.message}
@@ -76,7 +74,7 @@ export default function CookiesModal({ translations }: CookiesModalProps) {
           <div className="flex h-fit w-full flex-row justify-center gap-5">
             {/* Decline */}
             <button
-              className="hover:bg-gold flex h-fit flex-col items-center justify-center border border-white px-3 py-2 text-white md:px-9 md:py-3"
+              className="hover:bg-gold flex h-fit flex-col items-center justify-center border border-white px-3 py-2 text-white hover:bg-black md:px-9 md:py-3"
               onClick={handleCancelCookie}
             >
               <InterText fontSize="14px" className="max-w-[500px] text-center">
@@ -85,7 +83,7 @@ export default function CookiesModal({ translations }: CookiesModalProps) {
             </button>
             {/* Accept */}
             <button
-              className="hover:bg-gold flex h-fit flex-col items-center justify-center border border-white bg-black px-3 py-2 text-white md:px-9 md:py-3"
+              className="hover:bg-gold flex h-fit flex-col items-center justify-center border bg-black px-3 py-2 text-white hover:bg-transparent hover:text-black md:px-9 md:py-3"
               onClick={handleAcceptCookie}
             >
               <InterText fontSize="14px" className="max-w-[500px] text-center">
