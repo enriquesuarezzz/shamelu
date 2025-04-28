@@ -1,6 +1,6 @@
 # NextJS + Tailwind CSS Ecommerce with Firebase and Stripe
 
-This is a Next.js eCommerce application designed for selling red wine, white wine, and sparkling wines. It uses Firebase as the database and Stripe for processing payments.
+This is a Next.js eCommerce application designed for selling swimsuits. It uses Firebase as the database and Stripe for processing payments.
 
 ## Features
 
