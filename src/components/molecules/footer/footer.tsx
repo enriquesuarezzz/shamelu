@@ -18,7 +18,7 @@ export default async function Footer() {
             <Link href="/">
               <InterText
                 fontSize="16px"
-                className="relative block w-fit pl-2 transition-colors duration-300 hover:text-[#1bdddd]"
+                className="hover:text-electric_blue_hover relative block w-fit pl-2 text-electric_blue transition-colors duration-300"
               >
                 {t('home')}
               </InterText>
@@ -27,7 +27,7 @@ export default async function Footer() {
             <Link href="/collections">
               <InterText
                 fontSize="16px"
-                className="relative block w-fit pl-2 transition-colors duration-300 hover:text-[#1bdddd]"
+                className="hover:text-electric_blue_hover relative block w-fit pl-2 text-electric_blue transition-colors duration-300"
               >
                 {t('collections')}
               </InterText>
@@ -36,7 +36,7 @@ export default async function Footer() {
             <Link href="/shop">
               <InterText
                 fontSize="16px"
-                className="relative block w-fit pl-2 transition-colors duration-300 hover:text-[#1bdddd]"
+                className="hover:text-electric_blue_hover relative block w-fit pl-2 text-electric_blue transition-colors duration-300"
               >
                 {t('shop')}
               </InterText>
@@ -45,7 +45,7 @@ export default async function Footer() {
             <Link href="/about_us">
               <InterText
                 fontSize="16px"
-                className="relative block w-fit pl-2 transition-colors duration-300 hover:text-[#1bdddd]"
+                className="hover:text-electric_blue_hover relative block w-fit pl-2 text-electric_blue transition-colors duration-300"
               >
                 {t('about_us')}
               </InterText>
@@ -54,7 +54,7 @@ export default async function Footer() {
             <Link href="/cookies_policy">
               <InterText
                 fontSize="16px"
-                className="relative block w-fit pl-2 transition-colors duration-300 hover:text-[#1bdddd]"
+                className="hover:text-electric_blue_hover relative block w-fit pl-2 text-electric_blue transition-colors duration-300"
               >
                 {t('cookies')}
               </InterText>
@@ -63,7 +63,7 @@ export default async function Footer() {
             <Link href="/privacy_policy">
               <InterText
                 fontSize="16px"
-                className="relative block w-fit pl-2 transition-colors duration-300 hover:text-[#1bdddd]"
+                className="hover:text-electric_blue_hover relative block w-fit pl-2 text-electric_blue transition-colors duration-300"
               >
                 {t('privacy')}
               </InterText>
@@ -72,7 +72,7 @@ export default async function Footer() {
             <Link href="/terms_and_conditions">
               <InterText
                 fontSize="16px"
-                className="relative block w-fit pl-2 transition-colors duration-300 hover:text-[#1bdddd]"
+                className="hover:text-electric_blue_hover relative block w-fit pl-2 text-electric_blue transition-colors duration-300"
               >
                 {t('terms_and_conditions')}
               </InterText>
@@ -81,7 +81,7 @@ export default async function Footer() {
         </div>
 
         {/* Divider */}
-        <hr className="my-3 border-black lg:my-8" />
+        <hr className="my-3 border-electric_blue lg:my-8" />
         {/* Social Media Links */}
         <div className="flex flex-wrap items-center justify-center gap-4 pt-2 md:gap-6 md:pt-4">
           {/* Phone Link */}
@@ -96,7 +96,7 @@ export default async function Footer() {
             {/* Phone Number */}
             <InterText
               fontSize="16px"
-              className="relative block w-fit pl-2 transition-colors duration-300 hover:text-[#1bdddd]"
+              className="hover:text-electric_blue_hover relative block w-fit pl-2 text-electric_blue transition-colors duration-300"
             >
               +34 670082769
             </InterText>
@@ -125,7 +125,7 @@ export default async function Footer() {
             {/* Whatsapp Number */}
             <InterText
               fontSize="16px"
-              className="relative block w-fit pl-2 transition-colors duration-300 hover:text-[#1bdddd]"
+              className="hover:text-electric_blue_hover relative block w-fit pl-2 text-electric_blue transition-colors duration-300"
             >
               670082769
             </InterText>
@@ -134,15 +134,21 @@ export default async function Footer() {
 
         {/* Second Divider */}
         <div className="flex justify-center">
-          <hr className="mt-4 w-32 border-black md:mt-8" />
+          <hr className="mt-4 w-32 border-electric_blue md:mt-8" />
         </div>
 
         <div className="flex items-center justify-center gap-6 pt-4">
-          <InterText fontSize="16px" className="">
+          <InterText
+            fontSize="16px"
+            className="hover:text-electric_blue_hover text-electric_blue"
+          >
             Shamelu © 2025
           </InterText>
           <div className="flex items-center gap-2">
-            <InterText fontSize="16px" className="">
+            <InterText
+              fontSize="16px"
+              className="hover:text-electric_blue_hover text-electric_blue"
+            >
               Created by{' '}
             </InterText>
             <a

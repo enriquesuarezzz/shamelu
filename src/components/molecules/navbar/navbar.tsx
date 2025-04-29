@@ -66,7 +66,7 @@ export default function NavBar({ translations }: NavBarProps) {
               <InterText
                 tag="h1"
                 fontSize="16px"
-                className="text-black transition-colors duration-300 hover:text-[#1bdddd]"
+                className="hover:text-electric_blue_hover text-electric_blue transition-colors duration-300"
               >
                 {translations.home}
               </InterText>
@@ -75,7 +75,7 @@ export default function NavBar({ translations }: NavBarProps) {
               <InterText
                 tag="h1"
                 fontSize="16px"
-                className="text-black transition-colors duration-300 hover:text-[#1bdddd]"
+                className="hover:text-electric_blue_hover text-electric_blue transition-colors duration-300"
               >
                 {translations.collections}
               </InterText>
@@ -84,7 +84,7 @@ export default function NavBar({ translations }: NavBarProps) {
               <InterText
                 tag="h1"
                 fontSize="16px"
-                className="text-black transition-colors duration-300 hover:text-[#1bdddd]"
+                className="hover:text-electric_blue_hover text-electric_blue transition-colors duration-300"
               >
                 {translations.shop}
               </InterText>
@@ -93,7 +93,7 @@ export default function NavBar({ translations }: NavBarProps) {
               <InterText
                 tag="h1"
                 fontSize="16px"
-                className="text-black transition-colors duration-300 hover:text-[#1bdddd]"
+                className="hover:text-electric_blue_hover text-electric_blue transition-colors duration-300"
               >
                 {translations.about_us}
               </InterText>
