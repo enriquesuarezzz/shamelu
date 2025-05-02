@@ -1,4 +1,4 @@
-# NextJS + Tailwind CSS Ecommerce with Firebase and Stripe
+# NextJS + Tailwind CSS Ecommerce with Firebase and Strip
 
 This is a Next.js eCommerce application designed for selling fashion products. It uses Firebase as the database and Stripe for processing payments.
 
