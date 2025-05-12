@@ -2,7 +2,7 @@
 
 This is a Next.js eCommerce application designed for selling fashion products. It uses Firebase as the database and Stripe for processing payments.
 
-## Features
+## Feature
 
 - **Product Management**: Manage and display products stored in Firebase.
 - **Cart Functionality**: Add products to a cart, view cart items, and proceed to checkout.
