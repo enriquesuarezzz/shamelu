@@ -66,7 +66,7 @@ export default function NavBar({ translations }: NavBarProps) {
               <InterText
                 tag="h1"
                 fontSize="16px"
-                className="hover:text-electric_blue_hover text-electric_blue transition-colors duration-300"
+                className="text-black transition-colors duration-300 hover:text-electric_blue"
               >
                 {translations.home}
               </InterText>
@@ -75,7 +75,7 @@ export default function NavBar({ translations }: NavBarProps) {
               <InterText
                 tag="h1"
                 fontSize="16px"
-                className="hover:text-electric_blue_hover text-electric_blue transition-colors duration-300"
+                className="text-black transition-colors duration-300 hover:text-electric_blue"
               >
                 {translations.collections}
               </InterText>
@@ -84,7 +84,7 @@ export default function NavBar({ translations }: NavBarProps) {
               <InterText
                 tag="h1"
                 fontSize="16px"
-                className="hover:text-electric_blue_hover text-electric_blue transition-colors duration-300"
+                className="text-black transition-colors duration-300 hover:text-electric_blue"
               >
                 {translations.shop}
               </InterText>
@@ -93,7 +93,7 @@ export default function NavBar({ translations }: NavBarProps) {
               <InterText
                 tag="h1"
                 fontSize="16px"
-                className="hover:text-electric_blue_hover text-electric_blue transition-colors duration-300"
+                className="text-black transition-colors duration-300 hover:text-electric_blue"
               >
                 {translations.about_us}
               </InterText>
@@ -108,7 +108,7 @@ export default function NavBar({ translations }: NavBarProps) {
             noResults={translations.search_bar.no_results}
           />
           <button aria-label="Add to Cart" onClick={() => setIsCartOpen(true)}>
-            <Cart />
+            <Cart className="transition-all duration-300 hover:scale-110" />
           </button>
           <LocaleSwitcher />
         </div>
